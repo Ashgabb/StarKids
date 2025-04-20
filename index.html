@@ -3,54 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Kids International School | STEM & Montessori Education</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Star Kids Int. STEM Academy | STEM & Montessori Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <body>
-        <!-- Scroll progress indicator -->
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="stars-container">
+            <div class="star"><i class="fas fa-star"></i></div>
+            <div class="star"><i class="fas fa-star"></i></div>
+            <div class="star"><i class="fas fa-star"></i></div>
+            <div class="star"><i class="fas fa-star"></i></div>
+            <div class="star"><i class="fas fa-star"></i></div>
         </div>
-    
-        <header id="mainHeader">
+        <div class="loading-text">Loading Star Kids International STEM Academy</div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="container">
             <div class="nav-container">
                 <div class="logo">
                     <img src="images/Star Kits-1.png" alt="Star Kids International School Logo">
                     <div class="logo-text">
                         <h1>STAR <span>KIDS</span></h1>
-                        <p>International School</p>
+                        <p>International STEM Academy</p>
                     </div>
                 </div>
-                <nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#programs">Programs</a></li>
                         <li><a href="#admissions">Admissions</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><button id="enrollBtnMobile" class="btn btn-primary">Enroll Now</button></li>
                     </ul>
                 </nav>
             </div>
-        </header>
-    
-        <section class="hero" id="home">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="hero-content">
-                <h2 class="fade-in">Revolutionizing Education Through STEM & Montessori</h2>
-                <p class="fade-in" style="transition-delay: 0.2s">Empowering students to build confidence, develop leadership skills, and gain practical knowledge for the future.</p>
-                <div class="btn-container fade-in" style="transition-delay: 0.4s">
-                    <a href="#admissions" class="btn pulse">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h2 class="animate__animated animate__fadeInUp">Revolutionizing Education Through STEM & Montessori</h2>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Empowering students to build confidence, develop leadership skills, and gain practical knowledge for the future.</p>
+                <div class="btn-container animate__animated animate__fadeInUp animate__delay-2s">
+                    <button id="enrollBtn" class="btn btn-primary">Enroll Now</button>
                     <a href="#programs" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
-        </section>
-    
-        <section class="features" id="about">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
             <div class="section-title">
                 <h2>Why Choose Star Kids?</h2>
             </div>
+            
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-img">
@@ -59,8 +97,10 @@
                     <div class="feature-content">
                         <h3>Montessori Preschool</h3>
                         <p>Our preschool program follows the Montessori approach, fostering independence, curiosity, and a love for learning in young children.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
+                
                 <div class="feature-card" style="transition-delay: 0.2s">
                     <div class="feature-img">
                         <img src="images/pngwing.com (3).png" alt="STEM Lab">
@@ -68,8 +108,10 @@
                     <div class="feature-content">
                         <h3>STEM Focused Curriculum</h3>
                         <p>Elementary and junior high students engage in hands-on STEM learning that develops critical thinking and problem-solving skills.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
+                
                 <div class="feature-card" style="transition-delay: 0.4s">
                     <div class="feature-img">
                         <img src="images/pngwing.com (5).png" alt="Students in Leadership Activity">
@@ -77,15 +119,20 @@
                     <div class="feature-content">
                         <h3>Leadership Development</h3>
                         <p>We cultivate leadership qualities through practical experiences, team projects, and character-building activities.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-    
-        <section class="programs" id="programs">
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
             <div class="section-title">
                 <h2>Our Programs</h2>
             </div>
+            
             <div class="program-tabs">
                 <button class="tab-btn active" data-tab="preschool">Preschool</button>
                 <button class="tab-btn" data-tab="elementary">Elementary</button>
@@ -95,7 +142,7 @@
             
             <div class="tab-content active" id="preschool">
                 <div class="program-details">
-                    <div class="program-text slide-in-left">
+                    <div class="program-text">
                         <h3>Montessori Preschool Program</h3>
                         <p>Our preschool program for ages 3-5 follows the Montessori philosophy, creating a prepared environment where children learn through exploration and discovery.</p>
                         <ul>
@@ -105,9 +152,9 @@
                             <li>Early literacy and numeracy</li>
                             <li>Social and emotional growth</li>
                         </ul>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
-                    <div class="program-img slide-in-right">
+                    <div class="program-img">
                         <img src="images/IMG_3929.JPG" alt="Preschool Classroom">
                     </div>
                 </div>
@@ -125,7 +172,7 @@
                             <li>Applied mathematics</li>
                             <li>Entrepreneurship basics</li>
                         </ul>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                     <div class="program-img">
                         <img src="images/IMG_3929.JPG" alt="Elementary Students in Lab">
@@ -145,7 +192,7 @@
                             <li>Public speaking and leadership</li>
                             <li>Career exploration</li>
                         </ul>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                     <div class="program-img">
                         <img src="images/IMG_3929.JPG" alt="Junior High Students">
@@ -165,19 +212,23 @@
                             <li>Sports and physical development</li>
                             <li>Community service projects</li>
                         </ul>
-                        <a href="#" class="btn">Learn More</a>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                     <div class="program-img">
                         <img src="images/IMG_3929.JPG" alt="Students in Robotics Club">
                     </div>
                 </div>
             </div>
-        </section>
-    
-        <section class="testimonials">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
             <div class="section-title">
                 <h2>What Parents Say</h2>
             </div>
+            
             <div class="testimonial-slider">
                 <div class="testimonial active">
                     <img src="images/pp.jpeg" alt="Parent">
@@ -185,23 +236,49 @@
                     <h4>Sarah Johnson</h4>
                     <span>Parent of 3rd Grader</span>
                 </div>
+                
+                <div class="testimonial">
+                    <img src="images/pp.jpeg" alt="Parent">
+                    <p>"The Montessori foundation in preschool gave my son such confidence and independence. Now in elementary, he's thriving with the STEM curriculum. We couldn't be happier with Star Kids!"</p>
+                    <h4>Michael Chen</h4>
+                    <span>Parent of 1st and 4th Graders</span>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="images/pp.jpeg" alt="Parent">
+                    <p>"What impresses me most is how Star Kids balances academic rigor with character development. My daughter has grown so much in both knowledge and leadership skills."</p>
+                    <h4>Amina Diallo</h4>
+                    <span>Parent of 6th Grader</span>
+                </div>
             </div>
-        </section>
-    
-        <section class="admissions" id="admissions" style="padding: 5rem 5%; text-align: center; background-color: var(--light-bg);">
+            
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-slide="0"></div>
+                <div class="testimonial-dot" data-slide="1"></div>
+                <div class="testimonial-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions CTA Section -->
+    <section class="admissions-cta" id="admissions">
+        <div class="container">
             <div class="section-title">
                 <h2>Ready to Join Star Kids?</h2>
             </div>
-            <div style="max-width: 800px; margin: 0 auto;">
-                <p style="margin-bottom: 2rem;">We're currently accepting applications for the upcoming school year. Schedule a tour to experience our innovative learning environment firsthand.</p>
-                <a href="#" class="btn float">Schedule a Tour</a>
-                <a href="#" class="btn btn-outline" style="margin-left: 15px;">Download Application</a>
+            <p>We're currently accepting applications for the upcoming school year. Schedule a tour to experience our innovative learning environment firsthand.</p>
+            <div class="btn-container">
+                <button id="enrollBtnCta" class="btn btn-primary">Start Enrollment</button>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
             </div>
-        </section>
-    
-        <footer id="contact">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
             <div class="footer-container">
-                <div class="footer-col fade-in">
+                <div class="footer-col">
                     <h3>About Us</h3>
                     <p>Star Kids International School is revolutionizing education through STEM and Montessori approaches, empowering students with confidence, leadership, and practical skills for the future.</p>
                     <div class="social-links">
@@ -211,154 +288,272 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col fade-in" style="transition-delay: 0.2s">
+                
+                <div class="footer-col">
                     <h3>Quick Links</h3>
-                    <ul style="list-style: none; padding: 0;">
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#programs">Programs</a></li>
                         <li><a href="#admissions">Admissions</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col fade-in" style="transition-delay: 0.4s">
+                
+                <div class="footer-col">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Avenue, Learning City</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope"></i> info@starkids.edu</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Avenue, Learning City</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(233) 55-648-8655</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@starkids.edu.gh</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 7:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="copyright">
-                <p>&copy; 2023 Star Kids International School. All Rights Reserved.</p>
+                <p>&copy; 2025 Star Kids Int. STEM Academy. All Rights Reserved.</p>
             </div>
-        </footer>
-    
-        <script>
+        </div>
+    </footer>
+
+    <!-- Enrollment Form Modal -->
+    <div class="enrollment-modal" id="enrollmentModal">
+        <div class="form-container">
+            <button class="close-modal" id="closeModal">&times;</button>
+            
+            <div class="form-header">
+                <h2>Student Enrollment Form</h2>
+                <p>Complete this form to begin your child's journey at Star Kids International STEM Academy</p>
+            </div>
+            
+            <div id="success-message">
+                <h4><i class="fas fa-check-circle"></i> Submission Successful!</h4>
+                <p>Thank you for enrolling with Star Kids. A confirmation has been sent to your email.</p>
+            </div>
+            
+            <form id="enrollmentForm">
+                <div class="form-section">
+                    <h3><i class="fas fa-user-graduate"></i> Student Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth*</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade">Grade Applying For*</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="Preschool">Preschool</option>
+                            <option value="Kindergarten">Kindergarten</option>
+                            <option value="1st Grade">1st Grade</option>
+                            <option value="2nd Grade">2nd Grade</option>
+                            <option value="3rd Grade">3rd Grade</option>
+                            <option value="4th Grade">4th Grade</option>
+                            <option value="5th Grade">5th Grade</option>
+                            <option value="6th Grade">6th Grade</option>
+                            <option value="7th Grade">7th Grade</option>
+                            <option value="8th Grade">8th Grade</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-user-friends"></i> Parent/Guardian Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentFirstName">First Name*</label>
+                            <input type="text" id="parentFirstName" name="parentFirstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentLastName">Last Name*</label>
+                            <input type="text" id="parentLastName" name="parentLastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="relationship">Relationship to Student*</label>
+                            <select id="relationship" name="relationship" required>
+                                <option value="">Select</option>
+                                <option value="Mother">Mother</option>
+                                <option value="Father">Father</option>
+                                <option value="Guardian">Guardian</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-home"></i> Contact Information</h3>
+                    <div class="form-group">
+                        <label for="address">Street Address*</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State/Province*</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip/Postal Code*</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section" style="border-bottom: none;">
+                    <h3><i class="fas fa-info-circle"></i> Additional Information</h3>
+                    <div class="form-group">
+                        <label for="howHeard">How did you hear about us?</label>
+                        <select id="howHeard" name="howHeard">
+                            <option value="">Select</option>
+                            <option value="Friend/Family">Friend/Family</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Website">Website</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="questions">Questions or Comments</label>
+                        <textarea id="questions" name="questions" rows="4"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+                    <button type="button" id="downloadReceipt"><i class="fas fa-file-download"></i> Download Copy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Loading screen animation
+            setTimeout(function() {
+                document.getElementById('loading-screen').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 500);
+            }, 2000);
+            
             // Scroll progress indicator
-            window.onscroll = function() {
+            window.addEventListener('scroll', function() {
                 const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 const scrolled = (winScroll / height) * 100;
-                document.getElementById("progressBar").style.width = scrolled + "%";
+                document.getElementById('progressBar').style.width = scrolled + '%';
                 
                 // Header scroll effect
-                const header = document.getElementById("mainHeader");
+                const header = document.getElementById('mainHeader');
                 if (window.scrollY > 50) {
-                    header.classList.add("scrolled");
+                    header.classList.add('scrolled');
                 } else {
-                    header.classList.remove("scrolled");
+                    header.classList.remove('scrolled');
                 }
-            };
-            
-            // Intersection Observer for scroll animations
-            const observerOptions = {
-                threshold: 0.1
-            };
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                        
-                        // For feature cards - stagger the animation
-                        if (entry.target.classList.contains("feature-card")) {
-                            const delay = entry.target.style.transitionDelay || "0s";
-                            const delayValue = parseFloat(delay);
-                            entry.target.style.transitionDelay = `${delayValue + 0.2}s`;
-                        }
-                    }
-                });
-            }, observerOptions);
-            
-            // Observe all elements with animation classes
-            document.querySelectorAll('.fade-in, .scale-in, .slide-in-left, .slide-in-right, .rotate-in, .feature-card').forEach(el => {
-                observer.observe(el);
+                
+                // Back to top button
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
             });
             
-            // Tab functionality
-            const tabBtns = document.querySelectorAll('.tab-btn');
-            const tabContents = document.querySelectorAll('.tab-content');
-            
-            tabBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const tabId = btn.getAttribute('data-tab');
-                    
-                    // Remove active class from all buttons and contents
-                    tabBtns.forEach(btn => btn.classList.remove('active'));
-                    tabContents.forEach(content => content.classList.remove('active'));
-                    
-                    // Add active class to clicked button and corresponding content
-                    btn.classList.add('active');
-                    document.getElementById(tabId).classList.add('active');
-                    
-                    // Animate the content
-                    const content = document.getElementById(tabId);
-                    content.style.animation = 'none';
-                    void content.offsetWidth; // Trigger reflow
-                    content.style.animation = 'fadeIn 0.5s';
+            // Back to top button functionality
+            document.getElementById('backToTop').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
             });
             
-            // Testimonial slider
-            let currentTestimonial = 0;
-            const testimonials = [
-                {
-                    img: "images/parent1.jpg",
-                    quote: "Star Kids has transformed my child's attitude toward learning. The STEM projects make education exciting and relevant. She comes home every day eager to share what she's discovered.",
-                    name: "Sarah Johnson",
-                    role: "Parent of 3rd Grader"
-                },
-                {
-                    img: "images/parent2.jpg",
-                    quote: "The Montessori foundation in preschool gave my son such confidence and independence. Now in elementary, he's thriving with the STEM curriculum. We couldn't be happier with Star Kids!",
-                    name: "Michael Chen",
-                    role: "Parent of 1st and 4th Graders"
-                },
-                {
-                    img: "images/parent3.jpg",
-                    quote: "What impresses me most is how Star Kids balances academic rigor with character development. My daughter has grown so much in both knowledge and leadership skills.",
-                    name: "Amina Diallo",
-                    role: "Parent of 6th Grader"
-                }
-            ];
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mainNav = document.getElementById('mainNav');
             
-            function updateTestimonial() {
-                const testimonialContainer = document.querySelector('.testimonial');
-                
-                // Fade out current testimonial
-                testimonialContainer.classList.remove('active');
-                
-                setTimeout(() => {
-                    const testimonial = testimonials[currentTestimonial];
-                    testimonialContainer.innerHTML = `
-                        <img src="${testimonial.img}" alt="Parent">
-                        <p>"${testimonial.quote}"</p>
-                        <h4>${testimonial.name}</h4>
-                        <span>${testimonial.role}</span>
-                    `;
-                    
-                    // Fade in new testimonial
-                    setTimeout(() => {
-                        testimonialContainer.classList.add('active');
-                    }, 50);
-                    
-                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-                }, 500);
-            }
-            
-            // Change testimonial every 5 seconds
-            setInterval(updateTestimonial, 5000);
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
             
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
                     e.preventDefault();
                     
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
                     
                     if (targetElement) {
+                        // Close mobile menu if open
+                        if (mainNav.classList.contains('active')) {
+                            mainNav.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                        
                         window.scrollTo({
                             top: targetElement.offsetTop - 100,
                             behavior: 'smooth'
@@ -367,25 +562,276 @@
                 });
             });
             
-            // Button ripple effect
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const x = e.clientX - e.target.getBoundingClientRect().left;
-                    const y = e.clientY - e.target.getBoundingClientRect().top;
+            // Program tabs functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
                     
-                    const ripple = document.createElement('span');
-                    ripple.style.left = `${x}px`;
-                    ripple.style.top = `${y}px`;
-                    this.appendChild(ripple);
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
                     
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 1000);
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
                 });
             });
-        </script>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            
+            // Testimonial slider
+            let currentTestimonial = 0;
+            const testimonials = document.querySelectorAll('.testimonial');
+            const testimonialDots = document.querySelectorAll('.testimonial-dot');
+            
+            function showTestimonial(index) {
+                testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+                testimonialDots.forEach(dot => dot.classList.remove('active'));
+                
+                testimonials[index].classList.add('active');
+                testimonialDots[index].classList.add('active');
+                currentTestimonial = index;
+            }
+            
+            // Auto-rotate testimonials
+            setInterval(function() {
+                let nextTestimonial = currentTestimonial + 1;
+                if (nextTestimonial >= testimonials.length) nextTestimonial = 0;
+                showTestimonial(nextTestimonial);
+            }, 5000);
+            
+            // Dot navigation for testimonials
+            testimonialDots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    showTestimonial(index);
+                });
+            });
+            
+            // Enrollment modal functionality
+            const enrollmentModal = document.getElementById('enrollmentModal');
+            const enrollBtns = document.querySelectorAll('#enrollBtn, #enrollBtnMobile, #enrollBtnCta');
+            const closeModal = document.getElementById('closeModal');
+            
+            enrollBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    enrollmentModal.style.display = 'block';
+                    setTimeout(function() {
+                        enrollmentModal.classList.add('show');
+                        document.body.style.overflow = 'hidden';
+                    }, 10);
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                enrollmentModal.classList.remove('show');
+                setTimeout(function() {
+                    enrollmentModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 500);
+            });
+            
+            // Close modal when clicking outside
+            enrollmentModal.addEventListener('click', function(e) {
+                if (e.target === enrollmentModal) {
+                    enrollmentModal.classList.remove('show');
+                    setTimeout(function() {
+                        enrollmentModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }, 500);
+                }
+            });
+            
+            // Form submission and download functionality
+            const enrollmentForm = document.getElementById('enrollmentForm');
+            const successMessage = document.getElementById('success-message');
+            const downloadBtn = document.getElementById('downloadReceipt');
+            
+            // Store form data for download
+            let formDataForDownload = {};
+            
+            enrollmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                const submitBtn = enrollmentForm.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                
+                // Get form data
+                const formData = new FormData(enrollmentForm);
+                formDataForDownload = {};
+                
+                // Convert to object and store for download
+                formData.forEach((value, key) => {
+                    formDataForDownload[key] = value;
+                });
+                
+                // Add additional information
+                formDataForDownload.timestamp = new Date().toLocaleString();
+                formDataForDownload.schoolName = "Star Kids International School";
+                formDataForDownload.schoolContact = "123 Education Avenue, Learning City | (123) 456-7890";
+                
+                // Simulate form submission (replace with actual submission)
+                setTimeout(function() {
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    
+                    // Show download button
+                    downloadBtn.style.display = 'flex';
+                    
+                    // Reset form button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Enrollment';
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                }, 1500);
+            });
+            
+            // Download form data as PDF
+            downloadBtn.addEventListener('click', function() {
+                generatePDF(formDataForDownload);
+            });
+            
+            // Function to generate PDF
+            function generatePDF(data) {
+                downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating...';
+                downloadBtn.disabled = true;
+                
+                // Create a printable version of the form data
+                const printContent = `
+                    <style>
+                        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; }
+                        .receipt-header { text-align: center; margin-bottom: 20px; }
+                        .receipt-header h1 { color: #0056b3; margin-bottom: 5px; }
+                        .receipt-header p { color: #666; }
+                        .receipt-section { margin-bottom: 25px; }
+                        .receipt-section h2 { color: #0056b3; border-bottom: 2px solid #FF6B35; padding-bottom: 5px; font-size: 1.2rem; }
+                        .receipt-row { display: flex; margin-bottom: 8px; }
+                        .receipt-label { font-weight: bold; width: 200px; }
+                        .receipt-footer { margin-top: 30px; font-size: 0.9rem; color: #666; text-align: center; }
+                        .receipt-logo { text-align: center; margin-bottom: 15px; }
+                        .receipt-logo h1 { font-size: 2rem; color: #0056b3; }
+                        .receipt-logo h1 span { color: #FF6B35; }
+                        .receipt-logo p { color: #666; }
+                    </style>
+                    <div class="receipt-logo">
+                        <h1>STAR <span>KIDS</span></h1>
+                        <p>International School</p>
+                    </div>
+                    <div class="receipt-header">
+                        <h1>Enrollment Confirmation</h1>
+                        <p>Thank you for choosing Star Kids International School</p>
+                    </div>
+                    
+                    <div class="receipt-section">
+                        <h2>Student Information</h2>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Student Name:</div>
+                            <div>${data.firstName} ${data.lastName}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Date of Birth:</div>
+                            <div>${data.dob}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Gender:</div>
+                            <div>${data.gender || 'Not specified'}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Grade Applying For:</div>
+                            <div>${data.grade}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-section">
+                        <h2>Parent/Guardian Information</h2>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Parent Name:</div>
+                            <div>${data.parentFirstName} ${data.parentLastName}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Relationship:</div>
+                            <div>${data.relationship}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Phone Number:</div>
+                            <div>${data.phone}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Email Address:</div>
+                            <div>${data.email}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-section">
+                        <h2>Contact Information</h2>
+                        <div class="receipt-row">
+                            <div class="receipt-label">Address:</div>
+                            <div>${data.address}</div>
+                        </div>
+                        <div class="receipt-row">
+                            <div class="receipt-label">City/State/Zip:</div>
+                            <div>${data.city}, ${data.state} ${data.zip}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-section">
+                        <h2>Additional Information</h2>
+                        <div class="receipt-row">
+                            <div class="receipt-label">How You Heard About Us:</div>
+                            <div>${data.howHeard || 'Not specified'}</div>
+                        </div>
+                        ${data.questions ? `
+                        <div class="receipt-row">
+                            <div class="receipt-label">Questions/Comments:</div>
+                            <div>${data.questions}</div>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    <div class="receipt-footer">
+                        <p>Submitted on: ${data.timestamp}</p>
+                        <p>${data.schoolContact}</p>
+                        <p>This is a confirmation of your enrollment submission. Our admissions team will contact you shortly.</p>
+                    </div>
+                `;
+                
+                // Create a new window with the receipt content
+                const receiptWindow = window.open('', '_blank');
+                receiptWindow.document.write(printContent);
+                receiptWindow.document.close();
+                
+                // Allow time for the content to render
+                setTimeout(() => {
+                    // Trigger print dialog
+                    receiptWindow.print();
+                    
+                    // Reset download button
+                    downloadBtn.innerHTML = '<i class="fas fa-file-download"></i> Download Copy';
+                    downloadBtn.disabled = false;
+                }, 500);
+            }
+            
+            // Animate elements when they come into view
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.feature-card, .animate-on-scroll');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Run on load and scroll
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
 </body>
 </html>
